@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+     <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+     <div class="form-container"></div>
+    <p> <h2> Formulário de Cadastro</h2> </p>
+<form>
+<lable for = 'name'> Nome:</lable>
+<input type="text" id="name" name="name" placeholder="Digite seu nome">
+<label for="email">E-mail:</label>
+ <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+ <label for="password">Senha:</label>
+ <input type="text" id="password" name="password" placeholder="Digite sua senha">
+
+<label for="gender">Gênero:</label>
+ <select id="gender" name="gender" >
+
+<option value="">Selecione seu gênero</option>
+<option value="male">Masculino</option>
+<option value="female">Feminino</option>
+<option value="other">Outro</option>
+</select>
+
+<label for="birthdate">Data de Nascimento:</label>
+<input type="text" id="birthdate" name="birthdate" placeholder="DD/MM/AAAA">
+
+<div class="checkbox-group">
+ <label><input type="checkbox" name="newsletter" value="1"> Desejo receber a newsletter</label>
+<label><input type="checkbox" name="terms" value="1" required> Aceito os termos e condições</label>
+</div>
+ <div class="radio-group">
+    <label><input type="radio" name="contact-method" value="email" checked> Contato por e-mail</label>
+    <label><input type="radio" name="contact-method" value="phone"> Contato por telefone</label>
+</div>
+
+<label for="message">Mensagem:</label>
+<textarea id="message" name="message" placeholder="Digite sua mensagem" rows="2"></textarea>
+<input type="submit" value="Enviar">
+    
+</form>
+</center>
+
+
+
+</body>
+</html>
